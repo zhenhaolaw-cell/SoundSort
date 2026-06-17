@@ -81,8 +81,8 @@ export default function PlaylistPage() {
     const g: Record<string, Track[]> = {};
     tracks.forEach(t => {
       const gs = t._genres && t._genres.length > 0 ? [...new Set(t._genres)] : [t._genre].filter(Boolean);
-      if (gs.length === 0) { const r = classifyGenre(t.name, t.ar.map(a => a.name).join(", "), t.al?.name || ""); gs.push(r.genre); }
-      gs.forEach(gg => { if (!g[gg]) g[gg] = []; g[gg].push(t); });
+      if (gs.length === 0) { const r = classifyGenre(t.name, t.ar.map(a => a.name).join(", "), t.al?.name || ""); gs.push(r.genre || "未分类"); }
+      gs.filter((gg): gg is string => !!gg).forEach((gg) => { if (!g[gg]) g[gg] = []; g[gg].push(t); });
     });
     return g;
   };

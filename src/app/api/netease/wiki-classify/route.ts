@@ -1,4 +1,4 @@
-﻿import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -20,7 +20,7 @@ export async function GET(request: Request) {
         batch.map(async (id) => {
           try {
             const r = await song_wiki_summary({ id, cookie: "" });
-            const d = r.body || r;
+            const d: any = r.body || r;
             const styles: string[] = [];
             const blocks = d.data?.blocks || [];
             for (const block of blocks) {

@@ -1097,7 +1097,7 @@ export async function GET(request: Request) {
         await Promise.all(batch.map(async (track: any) => {
           try {
             const wr = await song_wiki_summary({ id: track.id, cookie: "" });
-            const wd = wr.body || wr;
+            const wd: any = wr.body || wr;
             const blocks = wd.data?.blocks || [];
             for (const block of blocks) {
               for (const c of block.creatives || []) {
