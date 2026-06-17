@@ -481,7 +481,6 @@ const ARTIST_GENRES: Record<string, string[]> = {
   "Hans Zimmer": ["交响乐"],
   "John Williams": ["交响乐"],
   "Ennio Morricone": ["交响乐"],
-  "坂本龙一": ["古典"],
   "Bad Bunny": ["拉丁"],
   "J Balvin": ["拉丁"],
   "Shakira": ["拉丁流行"],
