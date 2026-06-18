@@ -1,5 +1,4 @@
 const _xml2js = require("xml2js");
-/** @vercel/include */ require("xml2js");
 
 import { NextResponse } from "next/server";
 
