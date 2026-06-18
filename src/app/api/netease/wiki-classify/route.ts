@@ -1,4 +1,5 @@
-import "xml2js";
+const _xml2jsFix = require.resolve("xml2js");
+
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {

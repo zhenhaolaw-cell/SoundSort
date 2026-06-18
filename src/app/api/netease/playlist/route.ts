@@ -1,4 +1,5 @@
-import "xml2js";
+const _xml2jsFix = require.resolve("xml2js");
+
 import { NextResponse } from "next/server";
 
 // ========== STYLE MAPPING: NetEase wiki style -> our genre categories ==========
