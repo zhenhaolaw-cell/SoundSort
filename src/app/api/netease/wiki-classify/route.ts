@@ -1,4 +1,4 @@
-const _xml2jsFix = require.resolve("xml2js");
+/** @vercel/include */ require("xml2js");
 
 import { NextResponse } from "next/server";
 

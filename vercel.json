@@ -1,6 +1,14 @@
-{
+﻿{
   "buildCommand": "next build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "functions": {
+    "api/netease/playlist/route.ts": {
+      "includeFiles": "node_modules/xml2js/**"
+    },
+    "api/netease/wiki-classify/route.ts": {
+      "includeFiles": "node_modules/xml2js/**"
+    }
+  }
 }
