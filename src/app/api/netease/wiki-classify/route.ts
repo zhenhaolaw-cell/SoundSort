@@ -1,4 +1,4 @@
-const _xml2js = require("xml2js");
+const _x2j = eval('require("xml2js")');
 
 import { NextResponse } from "next/server";
 
