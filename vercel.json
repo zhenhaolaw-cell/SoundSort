@@ -1,5 +1,5 @@
 {
-  "buildCommand": "next build",
+  "buildCommand": "node scripts/copy-xml2js.mjs && next build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
   "framework": "nextjs"
