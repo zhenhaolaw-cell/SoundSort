@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node scripts/remove-voice-upload.mjs && next build",
+  "buildCommand": "node scripts/clean-netease-modules.mjs && next build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
   "framework": "nextjs"
